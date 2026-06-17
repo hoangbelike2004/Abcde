@@ -1,0 +1,235 @@
+{
+    "BuildID": "1d2fbc0f-b5f9-481c-b5e4-bf0472580264",
+    "Command": "project:deploy",
+    "ProjectID": "fec31873515bb48b5b78c96a463f1b8b",
+    "ProjectStateHash": "544700eac3881a3d57136e7a3cce40889db92b3b7ab584fb04a52c402adee018",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1781716675216,
+    "EndTime": 1781716778161,
+    "PlaygroundUserID": 36175,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "2022.3.62f3\r",
+    "LunaVersion": "7.2.0",
+    "LogCount": 9,
+    "Logs": [
+        {
+            "LogID": "3e868af6-d4d1-4bca-b229-b918c8c56431",
+            "Order": 4,
+            "Timestamp": 1781716778545,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3013",
+            "Description": "You are using an unsupported JSON feature: JsonUtility.",
+            "Details": [
+                "You are using an unsupported JSON feature: JsonUtility. Please use Newtonsoft.JSON instead. "
+            ],
+            "DescriptionValues": [
+                "JsonUtility"
+            ],
+            "DetailsValues": [
+                "JsonUtility"
+            ],
+            "LogCount": 1,
+            "LinePosition": 254,
+            "FilePath": "D:\\UnityProjectOfCompany\\Abcde\\Assets\\_Game\\Scripts\\Controllers\\GameController.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "8ad8032c-a462-4d04-9a13-f84c75974226",
+            "Order": 4,
+            "Timestamp": 1781716778547,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3013",
+            "Description": "You are using an unsupported JSON feature: JsonUtility.",
+            "Details": [
+                "You are using an unsupported JSON feature: JsonUtility. Please use Newtonsoft.JSON instead. "
+            ],
+            "DescriptionValues": [
+                "JsonUtility"
+            ],
+            "DetailsValues": [
+                "JsonUtility"
+            ],
+            "LogCount": 1,
+            "LinePosition": 267,
+            "FilePath": "D:\\UnityProjectOfCompany\\Abcde\\Assets\\_Game\\Scripts\\Controllers\\GameController.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "97ab66e5-32c4-4709-b90d-2c64c1289081",
+            "Order": 4,
+            "Timestamp": 1781716780624,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: Playable.InstallFullGame",
+            "Details": [
+                "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "DetailsValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "70503a10-cf0f-47e7-bdcf-2802edb8c833",
+            "Order": 4,
+            "Timestamp": 1781716780626,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3015",
+            "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "1759dff7-4205-4145-98cd-8d04b206da68",
+            "Order": 4,
+            "Timestamp": 1781716780638,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "53fa15d1-a3fd-4733-ac37-1ce759486a39",
+            "Order": 4,
+            "Timestamp": 1781716780640,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "a675044b-02dd-4d2b-b133-771d930e67ba",
+            "Order": 0,
+            "Timestamp": 1781716687111,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 14."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "14"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "4a731e39-05ba-4b76-a3ed-6bd45de0604d",
+            "Order": 1,
+            "Timestamp": 1781716687132,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "1.2.705"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "5aa27f20-85d9-4beb-93b1-fc05b64c3302",
+            "Order": 2,
+            "Timestamp": 1781716687132,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.7.7)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "D:/UnityProjectOfCompany/Abcde/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

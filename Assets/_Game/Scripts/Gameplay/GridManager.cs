@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System.Collections;
 
 [System.Serializable]
 public struct ColorSetting
@@ -28,6 +29,13 @@ public class GridManager : MonoBehaviour
     [Header("Scale Settings")]
     public int standardSize = 5;
 
+    // 🔥 THÊM VÀO TỪ BẢN CŨ: Mảng chứa viền kéo sẵn bằng tay
+    [Header("Border Pool (Kéo sẵn khoảng 12-15 đối tượng vào đây)")]
+    public List<BorderUnit> borderPoolList;
+
+    public CanvasWin canvasWin;
+
+    public Tutorial2 tutorial2;
     private bool isDragging = false;
     private int currentPointerId = -999;
 
@@ -47,13 +55,14 @@ public class GridManager : MonoBehaviour
 
     private bool isGameFinished = false;
 
-    private CellOrientationSO cellOrientationSO;
+    [SerializeField] private CellOrientationSO cellOrientationSO;
     private Transform borderPoolParent;
 
-    private bool isTutorial = false;
+    private bool isTutorial = false, isTutorial2 = false;
+
 
     // ==========================================
-    // 🔥 1. THÊM CẤU HÌNH OFFSET ĐỂ CÁCH GÓC RA
+    // CẤU HÌNH OFFSET ĐỂ CÁCH GÓC RA
     // ==========================================
     private Vector2 amountSelectOffset = new Vector2(20f, 20f); // Khoảng cách x, y so với góc
 
@@ -90,23 +99,84 @@ public class GridManager : MonoBehaviour
 
     void Start()
     {
+        // 🔥 TỪ BẢN CŨ: Tắt các border lúc mới vào game
+        if (borderPoolList != null)
+        {
+            for (int i = 0; i < borderPoolList.Count; i++)
+            {
+                if (borderPoolList[i] != null) borderPoolList[i].gameObject.SetActive(false);
+            }
+        }
+
         AdjustGridScale();
+        // 🔥 TỪ BẢN CŨ: Dùng Coroutine delay 0.1s
+        StartCoroutine(InitBordersDelayed());
+    }
+
+    private IEnumerator InitBordersDelayed()
+    {
+        yield return null;
+        yield return null;
+        yield return new WaitForSeconds(0.1f);
         SpawnInitialBorders();
     }
 
-    private void SafeDespawnBorder(BorderUnit border)
+    // ==========================================
+    // HÀM TÍNH BOUNDS TÙY CHỈNH (CỦA BẢN MỚI)
+    // ==========================================
+    private Bounds GetRelativeBounds(Transform root, Transform child)
+    {
+        RectTransform childRT = child.GetComponent<RectTransform>();
+        if (childRT == null) return new Bounds(Vector3.zero, Vector3.zero);
+
+        Rect rect = childRT.rect;
+        Vector3[] corners = new Vector3[4];
+        corners[0] = new Vector3(rect.xMin, rect.yMin, 0f);
+        corners[1] = new Vector3(rect.xMin, rect.yMax, 0f);
+        corners[2] = new Vector3(rect.xMax, rect.yMax, 0f);
+        corners[3] = new Vector3(rect.xMax, rect.yMin, 0f);
+
+        Vector3 min = root.InverseTransformPoint(child.TransformPoint(corners[0]));
+        Vector3 max = min;
+
+        for (int i = 1; i < 4; i++)
+        {
+            Vector3 pt = root.InverseTransformPoint(child.TransformPoint(corners[i]));
+            min = Vector3.Min(min, pt);
+            max = Vector3.Max(max, pt);
+        }
+
+        return new Bounds((min + max) / 2f, max - min);
+    }
+
+    // 🔥 TỪ BẢN CŨ: Hàm lấy Border từ List
+    private BorderUnit GetAvailableBorderFromList()
+    {
+        if (borderPoolList == null) return null;
+
+        for (int i = 0; i < borderPoolList.Count; i++)
+        {
+            if (borderPoolList[i] != null && !borderPoolList[i].gameObject.activeSelf)
+            {
+                borderPoolList[i].gameObject.SetActive(true);
+                return borderPoolList[i];
+            }
+        }
+
+        Debug.LogError("⚠️ Không đủ BorderUnit trong mảng borderPoolList! Tạo thêm clone ở Hierarchy và kéo thêm vào mảng.");
+        return null;
+    }
+
+    // 🔥 TỪ BẢN CŨ: Hàm huỷ/tắt Border
+    private void DeactivateBorder(BorderUnit border)
     {
         if (border == null) return;
         if (border.borderImage != null) border.borderImage.DOKill();
         if (border.backgroundImage != null) border.backgroundImage.DOKill();
-        border.gameObject.SetActive(true);
 
-        if (borderPoolParent != null)
-            border.transform.SetParent(borderPoolParent, false);
-        else
-            border.transform.SetParent(null, false);
+        if (border.rectContainerAmoutSellect != null) border.rectContainerAmoutSellect.gameObject.SetActive(false);
 
-        border.Despawn();
+        border.gameObject.SetActive(false);
     }
 
     private void SpawnInitialBorders()
@@ -127,16 +197,16 @@ public class GridManager : MonoBehaviour
                     if (c.numberValue == 1 && c.limitType == CellLimitType.Fixed)
                     {
                         currentGroupID++;
-                        BorderUnit permanentBorder = SimplePool.Spawn<BorderUnit>(PoolType.Border, transform.position, Quaternion.identity);
+                        BorderUnit permanentBorder = GetAvailableBorderFromList();
+                        if (permanentBorder == null) continue;
 
-                        // if (GameController.Instance.OnTutorialLevel)
-                        // {
+                        if (permanentBorder.transform.parent != transform)
+                            permanentBorder.transform.SetParent(transform, false);
+                        permanentBorder.transform.SetAsLastSibling();
                         permanentBorder.SetSorttingLayer();
                         permanentBorder.ResetSorttingLayer();
-                        //}
-                        permanentBorder.transform.SetParent(transform, false);
 
-                        Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, c.transform);
+                        Bounds bounds = GetRelativeBounds(transform, c.transform);
                         SetBorderBounds(permanentBorder.rect, bounds);
 
                         if (permanentBorder.borderImage != null)
@@ -157,11 +227,14 @@ public class GridManager : MonoBehaviour
                         c.isLocked = true;
                         c.groupID = currentGroupID;
 
-                        BorderUnit initialBorder = SimplePool.Spawn<BorderUnit>(PoolType.Border, transform.position, Quaternion.identity);
-                        // if (GameController.Instance.OnTutorialLevel) 
+                        BorderUnit initialBorder = GetAvailableBorderFromList();
+                        if (initialBorder == null) continue;
+
+                        if (initialBorder.transform.parent != transform)
+                            initialBorder.transform.SetParent(transform, false);
+                        initialBorder.transform.SetAsLastSibling();
                         initialBorder.SetSorttingLayer();
 
-                        initialBorder.transform.SetParent(transform, false);
                         SetBorderBounds(initialBorder.rect, bounds);
 
                         if (initialBorder.borderImage != null)
@@ -187,16 +260,16 @@ public class GridManager : MonoBehaviour
                         }
 
                         currentGroupID++;
-                        BorderUnit permanentBorder = SimplePool.Spawn<BorderUnit>(PoolType.Border, transform.position, Quaternion.identity);
+                        BorderUnit permanentBorder = GetAvailableBorderFromList();
+                        if (permanentBorder == null) continue;
 
-                        // if (GameController.Instance.OnTutorialLevel)
-                        // {
+                        if (permanentBorder.transform.parent != transform)
+                            permanentBorder.transform.SetParent(transform, false);
+                        permanentBorder.transform.SetAsLastSibling();
                         permanentBorder.SetSorttingLayer();
                         permanentBorder.ResetSorttingLayer();
-                        //}
-                        permanentBorder.transform.SetParent(transform, false);
 
-                        Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, c.transform);
+                        Bounds bounds = GetRelativeBounds(transform, c.transform);
                         SetBorderBounds(permanentBorder.rect, bounds);
 
                         if (permanentBorder.borderImage != null)
@@ -224,11 +297,14 @@ public class GridManager : MonoBehaviour
                         c.isLocked = true;
                         c.groupID = currentGroupID;
 
-                        BorderUnit initialBorder = SimplePool.Spawn<BorderUnit>(PoolType.Border, transform.position, Quaternion.identity);
-                        //if (GameController.Instance.OnTutorialLevel) 
+                        BorderUnit initialBorder = GetAvailableBorderFromList();
+                        if (initialBorder == null) continue;
+
+                        if (initialBorder.transform.parent != transform)
+                            initialBorder.transform.SetParent(transform, false);
+                        initialBorder.transform.SetAsLastSibling();
                         initialBorder.SetSorttingLayer();
 
-                        initialBorder.transform.SetParent(transform, false);
                         SetBorderBounds(initialBorder.rect, bounds);
 
                         if (initialBorder.borderImage != null)
@@ -247,15 +323,15 @@ public class GridManager : MonoBehaviour
                     }
                     else
                     {
-                        BorderUnit initialBorder = SimplePool.Spawn<BorderUnit>(PoolType.Border, transform.position, Quaternion.identity);
+                        BorderUnit initialBorder = GetAvailableBorderFromList();
+                        if (initialBorder == null) continue;
 
-                        // if (GameController.Instance.OnTutorialLevel)
-                        // {
+                        if (initialBorder.transform.parent != transform)
+                            initialBorder.transform.SetParent(transform, false);
+                        initialBorder.transform.SetAsLastSibling();
                         initialBorder.SetSorttingLayer();
-                        //}
-                        initialBorder.transform.SetParent(transform, false);
 
-                        Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, c.transform);
+                        Bounds bounds = GetRelativeBounds(transform, c.transform);
                         SetBorderBounds(initialBorder.rect, bounds);
 
                         if (initialBorder.borderImage != null)
@@ -333,8 +409,6 @@ public class GridManager : MonoBehaviour
 
             if (border == previewBorderUnit || activeBorders.ContainsValue(border))
             {
-                //if (!border.gameObject.activeSelf) border.gameObject.SetActive(true);
-                // 🔥 FIX LỖI: Chỉ ép bật Active(true) nếu viền này ĐANG LÀ viền kéo (preview).
                 if (border == previewBorderUnit)
                 {
                     if (!border.gameObject.activeSelf) border.gameObject.SetActive(true);
@@ -386,6 +460,11 @@ public class GridManager : MonoBehaviour
             Observer.OnStopTutorialShape?.Invoke();
             isTutorial = true;
         }
+        if (isTutorial2 == false)
+        {
+            tutorial2.HideTutorial();
+            isTutorial2 = true;
+        }
         isDragging = true;
         currentPointerId = eventData.pointerId;
 
@@ -406,15 +485,16 @@ public class GridManager : MonoBehaviour
         }
         else
         {
-            previewBorderUnit = SimplePool.Spawn<BorderUnit>(PoolType.Border, transform.position, Quaternion.identity);
-            // if (GameController.Instance.OnTutorialLevel)
-            // {
+            previewBorderUnit = GetAvailableBorderFromList();
+            if (previewBorderUnit == null) return;
+
+            if (previewBorderUnit.transform.parent != transform)
+                previewBorderUnit.transform.SetParent(transform, false);
+            previewBorderUnit.transform.SetAsLastSibling();
             previewBorderUnit.SetSorttingLayer();
-            //}
-            previewBorderUnit.transform.SetParent(transform, false);
 
             Canvas.ForceUpdateCanvases();
-            Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, startCell.transform);
+            Bounds bounds = GetRelativeBounds(transform, startCell.transform);
             SetBorderBounds(previewBorderUnit.rect, bounds);
         }
 
@@ -445,28 +525,9 @@ public class GridManager : MonoBehaviour
         int maxY = Mathf.Max(startCell.gridY, cell.gridY);
 
         int numberCount = 0;
-        int targetGroupID = 0; // Biến lưu GroupID của ô màu mục tiêu
+        int targetGroupID = 0;
         bool hitInvalidCell = false;
 
-        // 🔥 VÒNG 1: Quét tìm ô màu để lấy ID nhóm của nó
-        // for (int x = minX; x <= maxX; x++)
-        // {
-        //     for (int y = minY; y <= maxY; y++)
-        //     {
-        //         Cell c = gridCells[x, y];
-        //         if (c.colorType != CellColorType.None)
-        //         {
-        //             numberCount++;
-        //             targetGroupID = c.groupID;
-        //             // if (c == startCell)
-        //             // {
-        //             //     targetGroupID = c.groupID;
-        //             // }
-
-        //         }
-        //     }
-        // }
-        // 🔥 VÒNG 1: Quét tìm ô màu để lấy ID nhóm của nó
         for (int x = minX; x <= maxX; x++)
         {
             for (int y = minY; y <= maxY; y++)
@@ -476,12 +537,10 @@ public class GridManager : MonoBehaviour
                 {
                     numberCount++;
 
-                    // 1. Luôn nhận ID nhóm nếu đang thao tác kéo từ chính ô màu này
                     if (c == startCell)
                     {
                         targetGroupID = c.groupID;
                     }
-                    // 2. NGOẠI LỆ: Nếu đang kéo từ một ô trống (bên ngoài) vào...
                     else if (startCell.colorType == CellColorType.None)
                     {
                         if (c.limitType == CellLimitType.Fixed && c.numberValue == 1)
@@ -490,7 +549,6 @@ public class GridManager : MonoBehaviour
                         }
                         else if (c.limitType == CellLimitType.Unlimited)
                         {
-                            // Đếm xem nhóm của ô Unlimited này đang chiếm bao nhiêu ô trên lưới
                             int groupCellCount = 0;
                             for (int checkX = 0; checkX < width; checkX++)
                             {
@@ -503,7 +561,6 @@ public class GridManager : MonoBehaviour
                                 }
                             }
 
-                            // CHỈ cho phép kéo bao trùm nếu ô Unlimited này chưa có vùng chọn (size <= 1)
                             if (groupCellCount <= 1)
                             {
                                 targetGroupID = c.groupID;
@@ -515,7 +572,6 @@ public class GridManager : MonoBehaviour
         }
         if (numberCount > 1) return;
 
-        // 🔥 VÒNG 2: Kiểm tra vật cản thông minh
         for (int x = minX; x <= maxX; x++)
         {
             for (int y = minY; y <= maxY; y++)
@@ -531,14 +587,13 @@ public class GridManager : MonoBehaviour
 
                 if (c.isLocked)
                 {
-                    // 🔥 SỬA Ở ĐÂY: Chỉ cản nếu ô bị khóa KHÔNG thuộc về nhóm ta đang thao tác
                     if (targetGroupID != 0 && c.groupID == targetGroupID)
                     {
-                        // Cho qua (không cản) vì đang nối/kéo chính nhóm này
+                        // Cho qua
                     }
                     else
                     {
-                        isObstacle = true; // Chạm vào nhóm khác -> Cản
+                        isObstacle = true;
                     }
                 }
 
@@ -579,8 +634,8 @@ public class GridManager : MonoBehaviour
             }
         }
 
-        Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, gridCells[minX, minY].transform);
-        bounds.Encapsulate(RectTransformUtility.CalculateRelativeRectTransformBounds(transform, gridCells[maxX, maxY].transform));
+        Bounds bounds = GetRelativeBounds(transform, gridCells[minX, minY].transform);
+        bounds.Encapsulate(GetRelativeBounds(transform, gridCells[maxX, maxY].transform));
 
         SmoothSetBorderBounds(previewBorderUnit.rect, bounds);
         RefreshBordersVisibility();
@@ -635,14 +690,10 @@ public class GridManager : MonoBehaviour
         {
             border.imgContainerAmoutSellect.color = new Color(themeColor.r, themeColor.g, themeColor.b, 1f);
         }
-        // 2. Cập nhật Text và lấy màu của viền (themeColor)
+
         if (border.txtAmoutSellect != null)
         {
             border.txtAmoutSellect.text = totalCells.ToString();
-
-            // 🔥 CHỮ BÂY GIỜ SẼ LẤY MÀU CỦA ĐƯỜNG VIỀN
-            border.txtAmoutSellect.color = new Color(themeColor.r, themeColor.g, themeColor.b, 1f);
-            // Trộn themeColor với màu đen (Color.black) với tỉ lệ 0.3f (tương đương 30% độ đậm)
             border.txtAmoutSellect.color = Color.Lerp(themeColor, Color.black, 0.3f);
         }
 
@@ -650,14 +701,6 @@ public class GridManager : MonoBehaviour
         border.rectContainerAmoutSellect.anchorMax = chosenAnchor;
         border.rectContainerAmoutSellect.pivot = chosenAnchor;
 
-        // ==========================================
-        // 🔥 2. SỬA LOGIC TÍNH TOÁN OFFSET TẠI ĐÂY
-        // ==========================================
-        // Dựa trên góc được chọn (chosenAnchor), chúng ta quyết định dấu (+ hoặc -) của offset
-        // Trục X: Nếu ở bên trái (0) -> offset âm. Nếu bên phải (1) -> offset dương.
-        // Trục Y: Nếu ở dưới (0) -> offset âm. Nếu trên (1) -> offset dương.
-
-        // ĐỔI CHIỀU: Đẩy vào bên trong khung thay vì đẩy ra ngoài
         float finalOffsetX = (chosenAnchor.x == 0) ? amountSelectOffset.x : -amountSelectOffset.x;
         float finalOffsetY = (chosenAnchor.y == 0) ? amountSelectOffset.y : -amountSelectOffset.y;
         border.rectContainerAmoutSellect.anchoredPosition = new Vector2(finalOffsetX, finalOffsetY);
@@ -670,11 +713,14 @@ public class GridManager : MonoBehaviour
         rt.anchorMax = new Vector2(0.5f, 0.5f);
         rt.pivot = new Vector2(0.5f, 0.5f);
         rt.localScale = Vector3.one;
-        rt.anchoredPosition = bounds.center;
+
+        rt.anchoredPosition = new Vector2(bounds.center.x, bounds.center.y);
+
         Vector3 pos = rt.localPosition;
         pos.z = 0f;
         rt.localPosition = pos;
-        rt.sizeDelta = bounds.size + new Vector3(borderPadding, borderPadding, 0);
+
+        rt.sizeDelta = new Vector2(bounds.size.x + borderPadding, bounds.size.y + borderPadding);
     }
 
     private void SmoothSetBorderBounds(RectTransform rt, Bounds bounds)
@@ -685,8 +731,12 @@ public class GridManager : MonoBehaviour
         rt.pivot = new Vector2(0.5f, 0.5f);
 
         rt.DOKill();
-        rt.DOAnchorPos(bounds.center, 0.06f).SetEase(Ease.OutQuad);
-        rt.DOSizeDelta(bounds.size + new Vector3(borderPadding, borderPadding, 0), 0.06f).SetEase(Ease.OutQuad);
+
+        Vector2 targetPos = new Vector2(bounds.center.x, bounds.center.y);
+        Vector2 targetSize = new Vector2(bounds.size.x + borderPadding, bounds.size.y + borderPadding);
+
+        rt.DOAnchorPos(targetPos, 0.06f).SetEase(Ease.OutQuad);
+        rt.DOSizeDelta(targetSize, 0.06f).SetEase(Ease.OutQuad);
     }
 
     public void EndDrag(UnityEngine.EventSystems.PointerEventData eventData)
@@ -759,7 +809,7 @@ public class GridManager : MonoBehaviour
 
             if (previewBorderUnit != null && initialBorders.ContainsKey(coreCell) && previewBorderUnit != initialBorders[coreCell])
             {
-                SafeDespawnBorder(previewBorderUnit);
+                DeactivateBorder(previewBorderUnit);
                 permanentBorderUnit = initialBorders[coreCell];
                 permanentBorderUnit.gameObject.SetActive(true);
                 permanentBorderUnit.transform.SetAsLastSibling();
@@ -772,17 +822,12 @@ public class GridManager : MonoBehaviour
             permanentBorderUnit.rect.transform.DOKill();
             permanentBorderUnit.rect.transform.localScale = Vector3.one;
 
-            // ==================================================================================
-            // 🔥 LOGIC MỚI: KHÔNG HIỆN EFFECT NẾU CHỈ CÓ 1 Ô
-            // ==================================================================================
             if (isShapeValid && isAreaValid)
             {
-                // Chỉ xử lý sinh Effect khi vùng chọn lớn hơn 1 ô
                 if (currentSelectedCells.Count > 1)
                 {
                     Cell targetEffectCell = currentHoverCell != null ? currentHoverCell : startCell;
 
-                    // Nếu ô nhấc tay lên lại chính là ô màu thì đi tìm một góc trống
                     if (targetEffectCell != null && targetEffectCell.colorType != CellColorType.None)
                     {
                         Cell bottomLeft = gridCells[minX, minY];
@@ -812,14 +857,11 @@ public class GridManager : MonoBehaviour
 
             previewBorderUnit = null;
 
-            // if (GameController.Instance.OnTutorialLevel)
-            // {
             permanentBorderUnit.SetSorttingLayer();
             if (isShapeValid && isAreaValid) permanentBorderUnit.ResetSorttingLayer();
-            //}
 
-            Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, gridCells[minX, minY].transform);
-            bounds.Encapsulate(RectTransformUtility.CalculateRelativeRectTransformBounds(transform, gridCells[maxX, maxY].transform));
+            Bounds bounds = GetRelativeBounds(transform, gridCells[minX, minY].transform);
+            bounds.Encapsulate(GetRelativeBounds(transform, gridCells[maxX, maxY].transform));
             SetBorderBounds(permanentBorderUnit.rect, bounds);
 
             UpdateBorderAmountText(permanentBorderUnit, minX, maxX, minY, maxY, finalColor);
@@ -866,10 +908,13 @@ public class GridManager : MonoBehaviour
             if (previewBorderUnit.backgroundImage != null) previewBorderUnit.backgroundImage.DOKill();
 
             Canvas.ForceUpdateCanvases();
-            Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, startCell.transform);
+            Bounds bounds = GetRelativeBounds(transform, startCell.transform);
 
-            previewBorderUnit.rect.DOSizeDelta(bounds.size + new Vector3(borderPadding, borderPadding, 0), 0.2f).SetEase(Ease.OutQuad);
-            previewBorderUnit.rect.DOAnchorPos(bounds.center, 0.2f).SetEase(Ease.OutQuad);
+            Vector2 targetSize = new Vector2(bounds.size.x + borderPadding, bounds.size.y + borderPadding);
+            Vector2 targetPos = new Vector2(bounds.center.x, bounds.center.y);
+
+            previewBorderUnit.rect.DOSizeDelta(targetSize, 0.2f).SetEase(Ease.OutQuad);
+            previewBorderUnit.rect.DOAnchorPos(targetPos, 0.2f).SetEase(Ease.OutQuad);
 
             bool isFromInitial = initialBorders.ContainsKey(startCell) && initialBorders[startCell] == previewBorderUnit;
 
@@ -884,7 +929,7 @@ public class GridManager : MonoBehaviour
                 if (previewBorderUnit.borderImage != null) previewBorderUnit.borderImage.DOFade(0f, 0.2f);
                 if (previewBorderUnit.backgroundImage != null) previewBorderUnit.backgroundImage.DOFade(0f, 0.2f);
                 BorderUnit toDespawn = previewBorderUnit;
-                DOVirtual.DelayedCall(0.2f, () => SafeDespawnBorder(toDespawn));
+                DOVirtual.DelayedCall(0.2f, () => DeactivateBorder(toDespawn));
             }
             previewBorderUnit = null;
         }
@@ -918,39 +963,36 @@ public class GridManager : MonoBehaviour
                 initialBorders[originCell].SetWrongPattern(false);
             }
 
-            // 🔥 CHECK XEM VIỀN NÀY CÓ PHẢI LÀ INITIAL BORDER KHÔNG
             bool isFromInitial = originCell != null && initialBorders.ContainsKey(originCell) && initialBorders[originCell] == borderToDespawn;
 
             if (immediate)
             {
-                // NẾU XÓA TỨC THÌ: 
                 if (isFromInitial)
                 {
-                    // Nếu là viền gốc, CHỈ TRẢ LẠI MÀU GỐC, KHÔNG ĐƯỢC DESPAWN VÀO POOL!
                     Color originalColor = GetColorByType(originCell.colorType);
                     if (borderToDespawn.borderImage != null) borderToDespawn.borderImage.color = originalColor;
                     if (borderToDespawn.backgroundImage != null) borderToDespawn.backgroundImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, borderToDespawn.backgroundAlpha);
 
-                    // Thu về kích thước 1x1 chuẩn ngay lập tức
-                    Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, originCell.transform);
+                    Bounds bounds = GetRelativeBounds(transform, originCell.transform);
                     SetBorderBounds(borderToDespawn.rect, bounds);
                 }
                 else
                 {
-                    // Nếu là viền do Pool sinh ra (kéo từ chỗ khác tới), thì dọn dẹp bình thường
-                    SafeDespawnBorder(borderToDespawn);
+                    DeactivateBorder(borderToDespawn);
                 }
             }
             else
             {
-                // LOGIC CŨ KHI XÓA TỪ TỪ (CÓ ANIMATION MỜ DẦN)
                 if (originCell != null)
                 {
                     Canvas.ForceUpdateCanvases();
-                    Bounds bounds = RectTransformUtility.CalculateRelativeRectTransformBounds(transform, originCell.transform);
+                    Bounds bounds = GetRelativeBounds(transform, originCell.transform);
 
-                    borderToDespawn.rect.DOSizeDelta(bounds.size + new Vector3(borderPadding, borderPadding, 0), 0.25f).SetEase(Ease.OutQuad);
-                    borderToDespawn.rect.DOAnchorPos(bounds.center, 0.25f).SetEase(Ease.OutQuad);
+                    Vector2 targetSize = new Vector2(bounds.size.x + borderPadding, bounds.size.y + borderPadding);
+                    Vector2 targetPos = new Vector2(bounds.center.x, bounds.center.y);
+
+                    borderToDespawn.rect.DOSizeDelta(targetSize, 0.25f).SetEase(Ease.OutQuad);
+                    borderToDespawn.rect.DOAnchorPos(targetPos, 0.25f).SetEase(Ease.OutQuad);
 
                     if (isFromInitial)
                     {
@@ -962,7 +1004,7 @@ public class GridManager : MonoBehaviour
                     {
                         borderToDespawn.transform.SetAsLastSibling();
                         if (borderToDespawn.backgroundImage != null) borderToDespawn.backgroundImage.DOFade(0f, 0.25f);
-                        DOVirtual.DelayedCall(0.25f, () => SafeDespawnBorder(borderToDespawn));
+                        DOVirtual.DelayedCall(0.25f, () => DeactivateBorder(borderToDespawn));
                     }
                 }
                 else
@@ -971,7 +1013,7 @@ public class GridManager : MonoBehaviour
                     seq.SetLink(borderToDespawn.gameObject);
                     if (borderToDespawn.borderImage != null) seq.Join(borderToDespawn.borderImage.DOFade(0f, 0.25f));
                     if (borderToDespawn.backgroundImage != null) seq.Join(borderToDespawn.backgroundImage.DOFade(0f, 0.25f));
-                    seq.OnComplete(() => SafeDespawnBorder(borderToDespawn));
+                    seq.OnComplete(() => DeactivateBorder(borderToDespawn));
                 }
             }
 
@@ -1023,7 +1065,6 @@ public class GridManager : MonoBehaviour
             {
                 Cell c = gridCells[x, y];
                 var playTypeField = c.GetType().GetField("playType");
-                //if (playTypeField != null && (int)playTypeField.GetValue(c) == 1) continue;
                 if (playTypeField != null && c.numberValue == 1) continue;
                 if (c.playType == CellPlayType.Void) continue;
                 if (!c.isLocked) return;
@@ -1038,9 +1079,17 @@ public class GridManager : MonoBehaviour
 
         isGameFinished = true;
         Observer.OnWinLevel?.Invoke();
-        //StreakManager.Instance.CheckAndUpdateStreak();
-        CanvasWin canvasWin = UIManager.Instance.OpenUI<CanvasWin>();
-        canvasWin.ShowWinEffect();
+        StartCoroutine(WaitForWinEffect());
+    }
+
+    IEnumerator WaitForWinEffect()
+    {
+        yield return new WaitForSeconds(2f);
+        if (canvasWin != null)
+        {
+            canvasWin.gameObject.SetActive(true);
+            canvasWin.ShowWinEffect();
+        }
     }
 
     public void ClearAllBorders()
@@ -1052,7 +1101,7 @@ public class GridManager : MonoBehaviour
             if (border != null)
             {
                 border.ResetSorttingLayer();
-                SafeDespawnBorder(border);
+                DeactivateBorder(border);
             }
         }
 
@@ -1209,7 +1258,7 @@ public class GridManager : MonoBehaviour
             if (border != null)
             {
                 border.ResetSorttingLayer();
-                SafeDespawnBorder(border);
+                DeactivateBorder(border);
             }
         }
 
