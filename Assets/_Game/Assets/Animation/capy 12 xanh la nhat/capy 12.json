@@ -1,0 +1,873 @@
+{
+    "skeleton": {
+        "hash": "BPVi8bWDYniNQRe18LP7gqVsWJ8",
+        "spine": "3.8",
+        "x": -326.72,
+        "y": -55.92,
+        "width": 642,
+        "height": 814,
+        "images": "./images_capy_12/",
+        "audio": "D:/ui/farm/game drop capy/capy"
+    },
+    "bones": [
+        {
+            "name": "root"
+        },
+        {
+            "name": "bone",
+            "parent": "root",
+            "length": 175.06,
+            "rotation": 88.64,
+            "x": -10.53,
+            "y": 75.68
+        },
+        {
+            "name": "bone2",
+            "parent": "bone",
+            "length": 117.88,
+            "rotation": 135.41,
+            "x": 145.14,
+            "y": -202.17
+        },
+        {
+            "name": "bone3",
+            "parent": "bone",
+            "length": 112.54,
+            "rotation": -143.18,
+            "x": 142.6,
+            "y": 196.52
+        },
+        {
+            "name": "bone4",
+            "parent": "bone",
+            "length": 88.59,
+            "rotation": -129.82,
+            "x": -49.03,
+            "y": -158.17
+        },
+        {
+            "name": "bone5",
+            "parent": "bone",
+            "length": 114.42,
+            "rotation": 124.48,
+            "x": -53.66,
+            "y": 152.95
+        },
+        {
+            "name": "bone6",
+            "parent": "bone",
+            "length": 108.32,
+            "rotation": -39.48,
+            "x": -45.06,
+            "y": 83.68
+        },
+        {
+            "name": "bone7",
+            "parent": "bone",
+            "length": 265.17,
+            "rotation": -38.75,
+            "x": 47.74,
+            "y": 37.26
+        },
+        {
+            "name": "bone8",
+            "parent": "bone",
+            "length": 143.07,
+            "rotation": 1.36,
+            "x": 259.74,
+            "y": 3.41
+        },
+        {
+            "name": "bone9",
+            "parent": "bone",
+            "length": 50.02,
+            "rotation": 2.96,
+            "x": 457.05,
+            "y": 2.55
+        },
+        {
+            "name": "bone10",
+            "parent": "bone",
+            "length": 54.19,
+            "rotation": -0.1,
+            "x": 389.97,
+            "y": -39.34
+        },
+        {
+            "name": "bone11",
+            "parent": "bone",
+            "length": 91.84,
+            "rotation": 4.83,
+            "x": 572.04,
+            "y": 16.4
+        },
+        {
+            "name": "bone12",
+            "parent": "bone",
+            "x": 145.36,
+            "y": 58.93
+        }
+    ],
+    "slots": [
+        {
+            "name": "chan trai",
+            "bone": "bone5",
+            "attachment": "chan trai"
+        },
+        {
+            "name": "chan phai",
+            "bone": "bone4",
+            "attachment": "chan phai"
+        },
+        {
+            "name": "than the",
+            "bone": "bone",
+            "attachment": "than the"
+        },
+        {
+            "name": "ao",
+            "bone": "bone12",
+            "attachment": "ao"
+        },
+        {
+            "name": "ma hong",
+            "bone": "bone10",
+            "attachment": "ma hong"
+        },
+        {
+            "name": "mat",
+            "bone": "bone9",
+            "attachment": "mat"
+        },
+        {
+            "name": "mom",
+            "bone": "bone8",
+            "attachment": "mom"
+        },
+        {
+            "name": "tay trai",
+            "bone": "bone3",
+            "attachment": "tay trai"
+        },
+        {
+            "name": "tay phai",
+            "bone": "bone2",
+            "attachment": "tay phai"
+        },
+        {
+            "name": "mu",
+            "bone": "bone11",
+            "attachment": "mu"
+        },
+        {
+            "name": "dit kim",
+            "bone": "bone6",
+            "attachment": "dit kim"
+        },
+        {
+            "name": "dau kim",
+            "bone": "bone7",
+            "attachment": "dau kim"
+        }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "dau kim": {
+                    "dau kim": {
+                        "x": 163.2,
+                        "y": -6.25,
+                        "rotation": -49.89,
+                        "width": 354,
+                        "height": 406
+                    }
+                },
+                "mom": {
+                    "mom": {
+                        "x": 83.66,
+                        "y": -2.03,
+                        "rotation": -90,
+                        "width": 168,
+                        "height": 206
+                    }
+                },
+                "ma hong": {
+                    "ma hong": {
+                        "x": -14.15,
+                        "y": 43.96,
+                        "rotation": -88.53,
+                        "width": 445,
+                        "height": 119
+                    }
+                },
+                "tay phai": {
+                    "tay phai": {
+                        "x": 65.58,
+                        "y": -3.77,
+                        "rotation": 135.95,
+                        "width": 176,
+                        "height": 168
+                    }
+                },
+                "tay trai": {
+                    "tay trai": {
+                        "x": 59.43,
+                        "y": 3.57,
+                        "rotation": 54.54,
+                        "width": 167,
+                        "height": 177
+                    }
+                },
+                "mat": {
+                    "mat": {
+                        "x": 6.53,
+                        "y": 3.84,
+                        "rotation": -91.59,
+                        "width": 277,
+                        "height": 44
+                    }
+                },
+                "mu": {
+                    "mu": {
+                        "x": 39.07,
+                        "y": 6.06,
+                        "rotation": -93.47,
+                        "width": 240,
+                        "height": 143
+                    }
+                },
+                "chan phai": {
+                    "chan phai": {
+                        "x": 5.6,
+                        "y": -8.14,
+                        "rotation": 41.19,
+                        "width": 216,
+                        "height": 138
+                    }
+                },
+                "than the": {
+                    "than the": {
+                        "x": 251.93,
+                        "y": 1.69,
+                        "rotation": -88.64,
+                        "width": 625,
+                        "height": 677
+                    }
+                },
+                "ao": {
+                    "ao": {
+                        "x": -72.37,
+                        "y": -62.01,
+                        "rotation": -88.64,
+                        "width": 642,
+                        "height": 321
+                    }
+                },
+                "chan trai": {
+                    "chan trai": {
+                        "x": 1.86,
+                        "y": 13.82,
+                        "rotation": 146.89,
+                        "width": 216,
+                        "height": 138
+                    }
+                },
+                "dit kim": {
+                    "dit kim": {
+                        "x": 65.75,
+                        "y": 7.21,
+                        "rotation": -49.16,
+                        "width": 188,
+                        "height": 194
+                    }
+                }
+            }
+        }
+    ],
+    "animations": {
+        "action1": {
+            "bones": {
+                "bone7": {
+                    "rotate": [
+                        {
+                            "angle": -7.1
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "x": 38,
+                            "y": -6.31
+                        },
+                        {
+                            "time": 0.1333,
+                            "x": 70.9,
+                            "y": -43.32,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9333,
+                            "x": 70.9,
+                            "y": -43.32
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": 38,
+                            "y": -6.31
+                        }
+                    ]
+                },
+                "bone2": {
+                    "rotate": [
+                        {
+                            "angle": -27.51
+                        },
+                        {
+                            "time": 0.1333,
+                            "angle": -56.61,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9333,
+                            "angle": -56.61
+                        },
+                        {
+                            "time": 1.2333,
+                            "angle": -27.51
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "x": -12.14,
+                            "y": -20.12
+                        }
+                    ]
+                },
+                "bone3": {
+                    "rotate": [
+                        {
+                            "angle": 16.08
+                        },
+                        {
+                            "time": 0.1333,
+                            "angle": -0.85,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9333,
+                            "angle": -0.85
+                        },
+                        {
+                            "time": 1.2333,
+                            "angle": 16.08
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "x": -37.92,
+                            "y": 2.7
+                        }
+                    ]
+                },
+                "bone6": {
+                    "rotate": [
+                        {
+                            "angle": -6.48
+                        },
+                        {
+                            "time": 0.1333,
+                            "angle": -7.47,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9333,
+                            "angle": -7.47
+                        },
+                        {
+                            "time": 1.2333,
+                            "angle": -6.48
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "x": 80.25,
+                            "y": -39.55
+                        },
+                        {
+                            "time": 0.1333,
+                            "x": 50.73,
+                            "y": -2.44,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9333,
+                            "x": 50.73,
+                            "y": -2.44
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": 80.25,
+                            "y": -39.55
+                        }
+                    ]
+                },
+                "bone8": {
+                    "translate": [
+                        {
+                            "x": -27.02,
+                            "y": -0.64
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.838
+                        }
+                    ]
+                },
+                "bone9": {
+                    "translate": [
+                        {
+                            "x": -52.33,
+                            "y": 2.36
+                        }
+                    ]
+                },
+                "bone10": {
+                    "translate": [
+                        {
+                            "x": -37.44,
+                            "y": 7.21
+                        },
+                        {
+                            "time": 0.1667,
+                            "x": -37.69,
+                            "y": 1.77
+                        },
+                        {
+                            "time": 0.9667,
+                            "x": -39.46,
+                            "y": -0.22
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": -37.44,
+                            "y": 7.21
+                        }
+                    ]
+                },
+                "bone11": {
+                    "translate": [
+                        {
+                            "x": -30.63,
+                            "y": -0.73
+                        },
+                        {
+                            "time": 0.1667,
+                            "x": 0.65,
+                            "y": -7.21,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9667,
+                            "x": 0.65,
+                            "y": -7.21
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": -30.63,
+                            "y": -0.73
+                        }
+                    ]
+                },
+                "bone": {
+                    "translate": [
+                        {
+                            "y": -3.6
+                        },
+                        {
+                            "time": 0.1667,
+                            "x": 5.41,
+                            "y": 14.42,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9667,
+                            "x": 5.41,
+                            "y": 14.42
+                        },
+                        {
+                            "time": 1.2333,
+                            "y": -3.6
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.964
+                        },
+                        {
+                            "time": 0.1667,
+                            "x": 1.072
+                        },
+                        {
+                            "time": 0.3667,
+                            "x": 1.023
+                        },
+                        {
+                            "time": 0.9667,
+                            "x": 1.072
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": 0.964
+                        }
+                    ]
+                }
+            },
+            "drawOrder": [
+                {
+                    "offsets": [
+                        {
+                            "slot": "tay trai",
+                            "offset": 4
+                        },
+                        {
+                            "slot": "tay phai",
+                            "offset": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        "action2": {
+            "bones": {
+                "bone2": {
+                    "rotate": [
+                        {
+                            "angle": -16.45
+                        },
+                        {
+                            "time": 1,
+                            "angle": -11.98
+                        },
+                        {
+                            "time": 2,
+                            "angle": -16.45
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "x": -11.62,
+                            "y": -0.28
+                        }
+                    ]
+                },
+                "bone3": {
+                    "rotate": [
+                        {
+                            "angle": 22.61
+                        },
+                        {
+                            "time": 1,
+                            "angle": 12.45
+                        },
+                        {
+                            "time": 2,
+                            "angle": 22.61
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "x": -19.14,
+                            "y": -10.15
+                        }
+                    ]
+                },
+                "bone": {
+                    "translate": [
+                        {
+                            "y": -4.96
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.975
+                        },
+                        {
+                            "time": 1,
+                            "x": 0.923
+                        },
+                        {
+                            "time": 2,
+                            "x": 0.975
+                        }
+                    ]
+                },
+                "bone8": {
+                    "translate": [
+                        {
+                            "x": 15.4,
+                            "y": 0.37
+                        },
+                        {
+                            "time": 1,
+                            "x": -32.48,
+                            "y": 0.6
+                        },
+                        {
+                            "time": 2,
+                            "x": 15.4,
+                            "y": 0.37
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.961
+                        },
+                        {
+                            "time": 1,
+                            "x": 0.921
+                        },
+                        {
+                            "time": 2,
+                            "x": 0.961
+                        }
+                    ]
+                },
+                "bone9": {
+                    "translate": [
+                        {
+                            "x": -3.85,
+                            "y": -0.09
+                        },
+                        {
+                            "time": 1,
+                            "x": -39.98,
+                            "y": 0.43
+                        },
+                        {
+                            "time": 2,
+                            "x": -3.85,
+                            "y": -0.09
+                        }
+                    ]
+                },
+                "bone10": {
+                    "translate": [
+                        {
+                            "x": 7.7,
+                            "y": 0.18
+                        },
+                        {
+                            "time": 1,
+                            "x": -22.16,
+                            "y": -0.49
+                        },
+                        {
+                            "time": 2,
+                            "x": 7.7,
+                            "y": 0.18
+                        }
+                    ]
+                },
+                "bone11": {
+                    "translate": [
+                        {
+                            "x": 3.11,
+                            "y": -9.74
+                        },
+                        {
+                            "time": 1,
+                            "x": -20.89,
+                            "y": -2.03
+                        },
+                        {
+                            "time": 2,
+                            "x": 3.11,
+                            "y": -9.74
+                        }
+                    ]
+                },
+                "bone7": {
+                    "translate": [
+                        {
+                            "x": 1.27,
+                            "y": 0.03
+                        },
+                        {
+                            "time": 1,
+                            "x": -35.01,
+                            "y": 6.73
+                        },
+                        {
+                            "time": 2,
+                            "x": 1.27,
+                            "y": 0.03
+                        }
+                    ]
+                },
+                "bone6": {
+                    "translate": [
+                        {
+                            "x": 3.82,
+                            "y": 0.09
+                        },
+                        {
+                            "time": 1,
+                            "x": -30.4,
+                            "y": 7.9
+                        },
+                        {
+                            "time": 2,
+                            "x": 3.82,
+                            "y": 0.09
+                        }
+                    ]
+                }
+            },
+            "drawOrder": [
+                {
+                    "offsets": [
+                        {
+                            "slot": "tay trai",
+                            "offset": 3
+                        },
+                        {
+                            "slot": "tay phai",
+                            "offset": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        "action3": {
+            "slots": {
+                "dit kim": {
+                    "attachment": [
+                        {
+                            "name": null
+                        }
+                    ]
+                },
+                "dau kim": {
+                    "attachment": [
+                        {
+                            "name": null
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "bone": {
+                    "translate": [
+                        {
+                            "x": 2.18,
+                            "y": -6.53
+                        },
+                        {
+                            "time": 0.4333,
+                            "y": 6.53,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9667,
+                            "y": 6.53
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": 2.18,
+                            "y": -6.53
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.956
+                        },
+                        {
+                            "time": 0.4333,
+                            "x": 1.02,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 0.9667,
+                            "x": 1.02
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": 0.956
+                        }
+                    ]
+                },
+                "bone2": {
+                    "rotate": [
+                        {
+                            "angle": 1.67
+                        },
+                        {
+                            "time": 0.4333,
+                            "angle": -79.52
+                        },
+                        {
+                            "time": 0.5667,
+                            "angle": -148.92
+                        },
+                        {
+                            "time": 0.6667,
+                            "angle": -169.1
+                        },
+                        {
+                            "time": 0.7667,
+                            "angle": -116.45
+                        },
+                        {
+                            "time": 0.8667,
+                            "angle": -148.92
+                        },
+                        {
+                            "time": 0.9667,
+                            "angle": -116.45
+                        },
+                        {
+                            "time": 1.2333,
+                            "angle": 1.67
+                        }
+                    ]
+                },
+                "bone3": {
+                    "rotate": [
+                        {
+                            "angle": -1.48
+                        },
+                        {
+                            "time": 0.4333,
+                            "angle": 86.68
+                        },
+                        {
+                            "time": 0.5667,
+                            "angle": 145.69
+                        },
+                        {
+                            "time": 0.6667,
+                            "angle": 170.79
+                        },
+                        {
+                            "time": 0.7667,
+                            "angle": 114.96
+                        },
+                        {
+                            "time": 0.8667,
+                            "angle": 170.79
+                        },
+                        {
+                            "time": 0.9667,
+                            "angle": 114.96
+                        },
+                        {
+                            "time": 1.2333,
+                            "angle": -1.48
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+
+capy 10.png
+size: 433,417
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chan phai
+  rotate: true
+  xy: 188, 3
+  size: 71, 70
+  orig: 72, 70
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: true
+  xy: 260, 4
+  size: 70, 69
+  orig: 70, 70
+  offset: 0, 1
+  index: -1
+custom1
+  rotate: false
+  xy: 317, 101
+  size: 79, 86
+  orig: 79, 86
+  offset: 0, 0
+  index: -1
+eyes
+  rotate: true
+  xy: 317, 275
+  size: 140, 114
+  orig: 140, 114
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: true
+  xy: 317, 189
+  size: 84, 107
+  orig: 85, 107
+  offset: 0, 0
+  index: -1
+tai phai
+  rotate: true
+  xy: 378, 2
+  size: 44, 42
+  orig: 44, 43
+  offset: 0, 1
+  index: -1
+tai trai
+  rotate: false
+  xy: 331, 3
+  size: 45, 43
+  orig: 45, 43
+  offset: 0, 0
+  index: -1
+tay phai
+  rotate: true
+  xy: 331, 48
+  size: 51, 49
+  orig: 51, 49
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: true
+  xy: 382, 48
+  size: 51, 49
+  orig: 51, 50
+  offset: 0, 0
+  index: -1
+tham
+  rotate: false
+  xy: 2, 16
+  size: 184, 58
+  orig: 184, 59
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 2, 76
+  size: 313, 339
+  orig: 313, 339
+  offset: 0, 0
+  index: -1

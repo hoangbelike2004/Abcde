@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: d77752324fb35491a970f06a198b8ea0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6845664236199398212
+    second: capy 5_0
+  - first:
+      213: -5280089523060204668
+    second: capy 5_1
+  - first:
+      213: 4468646283619055259
+    second: capy 5_2
+  - first:
+      213: -7021572144280774871
+    second: capy 5_3
+  - first:
+      213: -367032240817660673
+    second: capy 5_4
+  - first:
+      213: -2852492650420415885
+    second: capy 5_5
+  - first:
+      213: -3698995897782376245
+    second: capy 5_6
+  - first:
+      213: 6808040143300333717
+    second: capy 5_7
+  - first:
+      213: -6507826822363743920
+    second: capy 5_8
+  - first:
+      213: -9111660239117475906
+    second: capy 5_9
+  - first:
+      213: 5063904098020463179
+    second: capy 5_10
+  - first:
+      213: -6538693305848260317
+    second: capy 5_11
+  - first:
+      213: 2819871855218200815
+    second: capy 5_12
+  - first:
+      213: 3866214093850582932
+    second: capy 5_13
+  - first:
+      213: -8044039414358817538
+    second: capy 5_14
+  - first:
+      213: 7076830723574024679
+    second: capy 5_15
+  - first:
+      213: -2373963212193990952
+    second: capy 5_16
+  - first:
+      213: 7469431746263152112
+    second: capy 5_17
+  - first:
+      213: -2022424278633597058
+    second: capy 5_18
+  - first:
+      213: -4548904489498738824
+    second: capy 5_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: capy 5_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 332
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bc24a5a5fa00f50800000000000000
+      internalID: 6845664236199398212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 332
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b1cbbcd8a59b6b0800000000000000
+      internalID: -5280089523060204668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 332
+        width: 115
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96bbf97e12d30e30800000000000000
+      internalID: 4468646283619055259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_3
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 366
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927dd5f265d5e8e90800000000000000
+      internalID: -7021572144280774871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 341
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc92f02f1a08eaf0800000000000000
+      internalID: -367032240817660673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 366
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372574f2c09e968d0800000000000000
+      internalID: -2852492650420415885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_6
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 341
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8ed0f34d68aacc0800000000000000
+      internalID: -3698995897782376245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 366
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590140690740b7e50800000000000000
+      internalID: 6808040143300333717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_8
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 278
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059ff392cfd8fa5a0800000000000000
+      internalID: -6507826822363743920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_9
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 226
+        width: 75
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf1a55c941ec8180800000000000000
+      internalID: -9111660239117475906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 110
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42972b82f9964640800000000000000
+      internalID: 5063904098020463179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1
+        width: 89
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32990b1f415e145a0800000000000000
+      internalID: -6538693305848260317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_12
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 110
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe017621382322720800000000000000
+      internalID: 2819871855218200815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 92
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f9299fb3d87a530800000000000000
+      internalID: 3866214093850582932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 82
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4c6e395c4dd5090800000000000000
+      internalID: -8044039414358817538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_15
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 72
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e943366c04f53260800000000000000
+      internalID: 7076830723574024679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_16
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 64
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6f45b490dfd0fd0800000000000000
+      internalID: -2373963212193990952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_17
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 10
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f57a063990c8a760800000000000000
+      internalID: 7469431746263152112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_18
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 20
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e773be675d7eee3e0800000000000000
+      internalID: -2022424278633597058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capy 5_19
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f7f3ac77b0fd0c0800000000000000
+      internalID: -4548904489498738824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      capy 5_0: 6845664236199398212
+      capy 5_1: -5280089523060204668
+      capy 5_10: 5063904098020463179
+      capy 5_11: -6538693305848260317
+      capy 5_12: 2819871855218200815
+      capy 5_13: 3866214093850582932
+      capy 5_14: -8044039414358817538
+      capy 5_15: 7076830723574024679
+      capy 5_16: -2373963212193990952
+      capy 5_17: 7469431746263152112
+      capy 5_18: -2022424278633597058
+      capy 5_19: -4548904489498738824
+      capy 5_2: 4468646283619055259
+      capy 5_3: -7021572144280774871
+      capy 5_4: -367032240817660673
+      capy 5_5: -2852492650420415885
+      capy 5_6: -3698995897782376245
+      capy 5_7: 6808040143300333717
+      capy 5_8: -6507826822363743920
+      capy 5_9: -9111660239117475906
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

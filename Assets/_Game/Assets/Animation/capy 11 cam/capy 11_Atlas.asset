@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: capy 11_Atlas
+  m_EditorClassIdentifier: spine-unity::Spine.Unity.SpineAtlasAsset
+  atlasFile: {fileID: 4900000, guid: 44fb9a650a5ad4a13ad767f72080554e, type: 3}
+  materials:
+  - {fileID: 2100000, guid: ec48cbcaa1a4f44c1a7d84adbbc384dd, type: 2}

@@ -1,0 +1,83 @@
+
+capy 11.png
+size: 738,322
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+carot
+  rotate: true
+  xy: 627, 193
+  size: 127, 105
+  orig: 130, 106
+  offset: 1, 0
+  index: -1
+chan phai
+  rotate: false
+  xy: 343, 2
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: false
+  xy: 453, 2
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+ma hong
+  rotate: false
+  xy: 343, 73
+  size: 233, 61
+  orig: 234, 61
+  offset: 0, 0
+  index: -1
+mat
+  rotate: false
+  xy: 578, 75
+  size: 147, 24
+  orig: 147, 24
+  offset: 0, 0
+  index: -1
+mom
+  rotate: true
+  xy: 627, 101
+  size: 90, 109
+  orig: 90, 109
+  offset: 0, 0
+  index: -1
+mu
+  rotate: false
+  xy: 343, 136
+  size: 282, 184
+  orig: 282, 184
+  offset: 0, 0
+  index: -1
+nuoc mui
+  rotate: false
+  xy: 563, 13
+  size: 33, 58
+  orig: 33, 58
+  offset: 0, 0
+  index: -1
+tay phai
+  rotate: false
+  xy: 598, 24
+  size: 53, 49
+  orig: 53, 50
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: false
+  xy: 653, 24
+  size: 52, 49
+  orig: 52, 51
+  offset: 0, 1
+  index: -1
+than
+  rotate: true
+  xy: 2, 7
+  size: 313, 339
+  orig: 313, 339
+  offset: 0, 0
+  index: -1

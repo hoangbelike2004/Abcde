@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53e664a1a0374a58ae0643680d6c3b3, type: 3}
+  m_Name: CellOrientationSO
+  m_EditorClassIdentifier: Assembly-CSharp::CellOrientationSO
+  cellOrientationDatas:
+  - orientationType: 0
+    colorType: 1
+    sprite: {fileID: 21300000, guid: a92548a427c4b42f1b564b87c91a72d1, type: 3}
+  - orientationType: 1
+    colorType: 1
+    sprite: {fileID: 21300000, guid: 5db9723467b664fa09ea621ac8826526, type: 3}
+  - orientationType: 2
+    colorType: 1
+    sprite: {fileID: 21300000, guid: 92301e685154d4678bf8f98e05b51b62, type: 3}
+  - orientationType: 3
+    colorType: 1
+    sprite: {fileID: 21300000, guid: a5e52f3fb047f460ab607e8acdcb9af7, type: 3}
+  - orientationType: 0
+    colorType: 2
+    sprite: {fileID: 21300000, guid: 8e8d2fd9e120f484fa3f195a09a54cdf, type: 3}
+  - orientationType: 1
+    colorType: 2
+    sprite: {fileID: 21300000, guid: 48f8f43bf2a614da580fb94c892d07bf, type: 3}
+  - orientationType: 2
+    colorType: 2
+    sprite: {fileID: 21300000, guid: 5554ab4741ffd4533a167a6d9058391d, type: 3}
+  - orientationType: 3
+    colorType: 2
+    sprite: {fileID: 21300000, guid: 6a43651714b584d24869f8109d3a2763, type: 3}
+  - orientationType: 0
+    colorType: 3
+    sprite: {fileID: 21300000, guid: 039dcd54d873244d8889ffd32a69944c, type: 3}
+  - orientationType: 1
+    colorType: 3
+    sprite: {fileID: 21300000, guid: 80bbeff7270cb4127b5f1ddada3b292d, type: 3}
+  - orientationType: 2
+    colorType: 3
+    sprite: {fileID: 21300000, guid: 7ab1afe0e35b44b15ba9cdaf4787ebec, type: 3}
+  - orientationType: 3
+    colorType: 3
+    sprite: {fileID: 21300000, guid: b56fadf0709e54473838d1d59b9e58bd, type: 3}
+  - orientationType: 0
+    colorType: 4
+    sprite: {fileID: 21300000, guid: e98ce04bcb9ee4a88a113c374aa21a47, type: 3}
+  - orientationType: 1
+    colorType: 4
+    sprite: {fileID: 21300000, guid: df08d8155a1be4a7e9c883ff2d07d776, type: 3}
+  - orientationType: 2
+    colorType: 4
+    sprite: {fileID: 21300000, guid: a1c5e681b63ea432f8a36ff0ead30f29, type: 3}
+  - orientationType: 3
+    colorType: 4
+    sprite: {fileID: 21300000, guid: 5ca175973de274ec7accea0add5b64cb, type: 3}
+  - orientationType: 0
+    colorType: 5
+    sprite: {fileID: 21300000, guid: 0be9ef142c9d74889aa8b850268181a0, type: 3}
+  - orientationType: 1
+    colorType: 5
+    sprite: {fileID: 21300000, guid: a50d0501ac9274d0397684669cdab006, type: 3}
+  - orientationType: 2
+    colorType: 5
+    sprite: {fileID: 21300000, guid: 73a75bcf82b7b469989df030a19eeead, type: 3}
+  - orientationType: 3
+    colorType: 5
+    sprite: {fileID: 21300000, guid: 5d4e3902a90554bb48c8a096f81f8ae1, type: 3}
+  - orientationType: 0
+    colorType: 8
+    sprite: {fileID: 21300000, guid: 85b0791905fb74f418a4aac87681e9c6, type: 3}
+  - orientationType: 1
+    colorType: 8
+    sprite: {fileID: 21300000, guid: b5b18791917b847379a18ad6f79a2381, type: 3}
+  - orientationType: 2
+    colorType: 8
+    sprite: {fileID: 21300000, guid: 27a0714cb05854280a6281d41d0443f1, type: 3}
+  - orientationType: 3
+    colorType: 8
+    sprite: {fileID: 21300000, guid: 0e6e1470e5bac444cb3810ea55e0fd64, type: 3}
+  - orientationType: 0
+    colorType: 9
+    sprite: {fileID: 21300000, guid: b26703f7a2b6c441d9316e292f909946, type: 3}
+  - orientationType: 1
+    colorType: 9
+    sprite: {fileID: 21300000, guid: d85ac6005acb24ce687b8f09da17e01b, type: 3}
+  - orientationType: 2
+    colorType: 9
+    sprite: {fileID: 21300000, guid: 1ea3c1cd1bc30458ab28db9b1968631e, type: 3}
+  - orientationType: 3
+    colorType: 9
+    sprite: {fileID: 21300000, guid: 0d2f2369915e94920b9571dda6d12404, type: 3}
+  - orientationType: 0
+    colorType: 12
+    sprite: {fileID: 21300000, guid: 61539a78e3b944bc2a0d63a8feb0edb8, type: 3}
+  - orientationType: 1
+    colorType: 12
+    sprite: {fileID: 21300000, guid: 96d97c40075204d44be4b84371262709, type: 3}
+  - orientationType: 2
+    colorType: 12
+    sprite: {fileID: 21300000, guid: 88da5540940ba4c8abe3d2818308a305, type: 3}
+  - orientationType: 3
+    colorType: 12
+    sprite: {fileID: 21300000, guid: b71cc12751fb44df0beafe8de3cdcfa5, type: 3}
+  - orientationType: 0
+    colorType: 6
+    sprite: {fileID: 21300000, guid: a6a84665a575a4c4bae482b00d6f04fa, type: 3}
+  - orientationType: 1
+    colorType: 6
+    sprite: {fileID: 21300000, guid: 5db9723467b664fa09ea621ac8826526, type: 3}
+  - orientationType: 2
+    colorType: 6
+    sprite: {fileID: 21300000, guid: 92301e685154d4678bf8f98e05b51b62, type: 3}
+  - orientationType: 3
+    colorType: 6
+    sprite: {fileID: 21300000, guid: a5e52f3fb047f460ab607e8acdcb9af7, type: 3}
+  - orientationType: 0
+    colorType: 7
+    sprite: {fileID: 21300000, guid: cdd9278aaf375478da1e3af00d2d9541, type: 3}
+  - orientationType: 1
+    colorType: 7
+    sprite: {fileID: 21300000, guid: 330a0afe5047c4830ab96f10b80b6093, type: 3}
+  - orientationType: 2
+    colorType: 7
+    sprite: {fileID: 21300000, guid: d71f8fb031822409ca2c557cf6500eb6, type: 3}
+  - orientationType: 3
+    colorType: 7
+    sprite: {fileID: 21300000, guid: 59de588ac9033437b8bcf24c81e86171, type: 3}
+  - orientationType: 0
+    colorType: 10
+    sprite: {fileID: 21300000, guid: 16980457e412a4aebb6be2b1fb63fde2, type: 3}
+  - orientationType: 1
+    colorType: 10
+    sprite: {fileID: 21300000, guid: 8f329026e601d4f6eaba059b110d5735, type: 3}
+  - orientationType: 2
+    colorType: 10
+    sprite: {fileID: 21300000, guid: 8a1dff99a8620485e846ad56aef01dec, type: 3}
+  - orientationType: 3
+    colorType: 10
+    sprite: {fileID: 21300000, guid: da0a7e4e32278491282e79149fc43af1, type: 3}
+  - orientationType: 0
+    colorType: 11
+    sprite: {fileID: 21300000, guid: a2dd70f4dacc7403188c7675281b47fa, type: 3}
+  - orientationType: 1
+    colorType: 11
+    sprite: {fileID: 21300000, guid: 07fd986f756be488e91b33a27b0a7931, type: 3}
+  - orientationType: 2
+    colorType: 11
+    sprite: {fileID: 21300000, guid: 539c79ef8c5584cfaa5dfedfadf3dbce, type: 3}
+  - orientationType: 3
+    colorType: 11
+    sprite: {fileID: 21300000, guid: 7a13fe38dec4a4bbda6ee628a1ba5e73, type: 3}

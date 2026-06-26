@@ -1,0 +1,90 @@
+
+capy 12.png
+size: 932,320
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ao
+  rotate: false
+  xy: 343, 157
+  size: 321, 161
+  orig: 321, 161
+  offset: 0, 0
+  index: -1
+chan phai
+  rotate: false
+  xy: 646, 26
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: false
+  xy: 525, 12
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+dau kim
+  rotate: true
+  xy: 666, 141
+  size: 177, 203
+  orig: 177, 203
+  offset: 0, 0
+  index: -1
+dit kim
+  rotate: false
+  xy: 343, 59
+  size: 94, 96
+  orig: 94, 97
+  offset: 0, 0
+  index: -1
+ma hong
+  rotate: true
+  xy: 871, 97
+  size: 221, 59
+  orig: 223, 60
+  offset: 1, 1
+  index: -1
+mat
+  rotate: false
+  xy: 635, 2
+  size: 139, 22
+  orig: 139, 22
+  offset: 0, 0
+  index: -1
+mom
+  rotate: false
+  xy: 439, 52
+  size: 84, 103
+  orig: 84, 103
+  offset: 0, 0
+  index: -1
+mu
+  rotate: false
+  xy: 525, 83
+  size: 119, 72
+  orig: 120, 72
+  offset: 1, 0
+  index: -1
+tay phai
+  rotate: false
+  xy: 756, 55
+  size: 88, 84
+  orig: 88, 84
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: false
+  xy: 846, 7
+  size: 84, 88
+  orig: 84, 89
+  offset: 0, 1
+  index: -1
+than the
+  rotate: true
+  xy: 2, 5
+  size: 313, 339
+  orig: 313, 339
+  offset: 0, 0
+  index: -1

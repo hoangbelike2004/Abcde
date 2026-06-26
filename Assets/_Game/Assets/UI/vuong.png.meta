@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 57811c93f68dc477fa43b1b6db184b19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -428739318404793233
+    second: vuong_0
+  - first:
+      213: 4691059611015370228
+    second: vuong_1
+  - first:
+      213: -8315159150148090733
+    second: vuong_2
+  - first:
+      213: 2271969299936875348
+    second: vuong_3
+  - first:
+      213: -3967959591203652860
+    second: vuong_4
+  - first:
+      213: -6101584041978735178
+    second: vuong_5
+  - first:
+      213: 2557497353907299943
+    second: vuong_6
+  - first:
+      213: -8763393604246286439
+    second: vuong_7
+  - first:
+      213: -8246747060492305523
+    second: vuong_8
+  - first:
+      213: 517065353704681828
+    second: vuong_9
+  - first:
+      213: -3643209963521570360
+    second: vuong_10
+  - first:
+      213: -1581764008074697194
+    second: vuong_11
+  - first:
+      213: -6060886207425923795
+    second: vuong_12
+  - first:
+      213: -2283753415370209866
+    second: vuong_13
+  - first:
+      213: 1834706399749578385
+    second: vuong_14
+  - first:
+      213: -2544831563745807454
+    second: vuong_15
+  - first:
+      213: -7420411142687433922
+    second: vuong_16
+  - first:
+      213: 132851361252434861
+    second: vuong_17
+  - first:
+      213: 3291334278097537208
+    second: vuong_18
+  - first:
+      213: 8487765570807157847
+    second: vuong_19
+  - first:
+      213: 3758723237923771923
+    second: vuong_20
+  - first:
+      213: -9206202224601301441
+    second: vuong_21
+  - first:
+      213: -6121162933018272212
+    second: vuong_22
+  - first:
+      213: -5054129381563714320
+    second: vuong_23
+  - first:
+      213: 9092794773784583568
+    second: vuong_24
+  - first:
+      213: -7950815398059256782
+    second: vuong_25
+  - first:
+      213: 2500107376551296714
+    second: vuong_26
+  - first:
+      213: 7467730040283214775
+    second: vuong_27
+  - first:
+      213: 6269551747479156305
+    second: vuong_28
+  - first:
+      213: 4467726403484832930
+    second: vuong_29
+  - first:
+      213: 619627270447435722
+    second: vuong_30
+  - first:
+      213: 8137986208545720850
+    second: vuong_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vuong_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c3d398cdfcc0af0800000000000000
+      internalID: -428739318404793233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 506
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5d0c6acddf91140800000000000000
+      internalID: 4691059611015370228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 506
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394859cfece9a9c80800000000000000
+      internalID: -8315159150148090733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 506
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45394577a08a78f10800000000000000
+      internalID: 2271969299936875348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_4
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 506
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bb33366c9fee8c0800000000000000
+      internalID: -3967959591203652860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 506
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b55aa234a1d25ba0800000000000000
+      internalID: -6101584041978735178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_6
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 506
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76665ad0b4e0e7320800000000000000
+      internalID: 2557497353907299943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_7
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 506
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f48f782fb226680800000000000000
+      internalID: -8763393604246286439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_8
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 476
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bfbdadd3bad8d80800000000000000
+      internalID: -8246747060492305523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461ba3d133cfc2700800000000000000
+      internalID: 517065353704681828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_10
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 416
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9022a37d7b07dc0800000000000000
+      internalID: -3643209963521570360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616a534e3027c0ae0800000000000000
+      internalID: -1581764008074697194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_12
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 356
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2530563b1863eba0800000000000000
+      internalID: -6060886207425923795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5064a5e5a7e40e0800000000000000
+      internalID: -2283753415370209866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_14
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 296
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e9538ffbf267910800000000000000
+      internalID: 1834706399749578385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3bab50d21feacd0800000000000000
+      internalID: -2544831563745807454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_16
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 236
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bd3c87167650990800000000000000
+      internalID: -7420411142687433922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3e063fb9bf7d100800000000000000
+      internalID: 132851361252434861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_18
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 176
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b80213761b2dad20800000000000000
+      internalID: 3291334278097537208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75450c801d99ac570800000000000000
+      internalID: 8487765570807157847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_20
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 116
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316d37dcedaa92430800000000000000
+      internalID: 3758723237923771923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e7a307adffc3080800000000000000
+      internalID: -9206202224601301441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_22
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 56
+        width: 6
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e58256eb24d0ba0800000000000000
+      internalID: -6121162933018272212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4b70bfa102cd9b0800000000000000
+      internalID: -5054129381563714320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_24
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d55facba8103e70800000000000000
+      internalID: 9092794773784583568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_25
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234d8fb458709a190800000000000000
+      internalID: -7950815398059256782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_26
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace7cafa96a22b220800000000000000
+      internalID: 2500107376551296714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_27
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b33899e7e4b2a760800000000000000
+      internalID: 7467730040283214775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_28
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156bc69c81ce10750800000000000000
+      internalID: 6269551747479156305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_29
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4d8513e7d800e30800000000000000
+      internalID: 4467726403484832930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_30
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf0a2438bb599800800000000000000
+      internalID: 619627270447435722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vuong_31
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a456bf65fefe070800000000000000
+      internalID: 8137986208545720850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vuong_0: -428739318404793233
+      vuong_1: 4691059611015370228
+      vuong_10: -3643209963521570360
+      vuong_11: -1581764008074697194
+      vuong_12: -6060886207425923795
+      vuong_13: -2283753415370209866
+      vuong_14: 1834706399749578385
+      vuong_15: -2544831563745807454
+      vuong_16: -7420411142687433922
+      vuong_17: 132851361252434861
+      vuong_18: 3291334278097537208
+      vuong_19: 8487765570807157847
+      vuong_2: -8315159150148090733
+      vuong_20: 3758723237923771923
+      vuong_21: -9206202224601301441
+      vuong_22: -6121162933018272212
+      vuong_23: -5054129381563714320
+      vuong_24: 9092794773784583568
+      vuong_25: -7950815398059256782
+      vuong_26: 2500107376551296714
+      vuong_27: 7467730040283214775
+      vuong_28: 6269551747479156305
+      vuong_29: 4467726403484832930
+      vuong_3: 2271969299936875348
+      vuong_30: 619627270447435722
+      vuong_31: 8137986208545720850
+      vuong_4: -3967959591203652860
+      vuong_5: -6101584041978735178
+      vuong_6: 2557497353907299943
+      vuong_7: -8763393604246286439
+      vuong_8: -8246747060492305523
+      vuong_9: 517065353704681828
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

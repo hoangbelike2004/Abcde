@@ -1,0 +1,76 @@
+
+Capy 1.png
+size: 891,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 0
+  rotate: false
+  xy: 2, 9
+  size: 501, 501
+  orig: 501, 501
+  offset: 0, 0
+  index: -1
+chan phai
+  rotate: true
+  xy: 820, 402
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: true
+  xy: 820, 292
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+ma hong
+  rotate: false
+  xy: 505, 2
+  size: 221, 59
+  orig: 223, 60
+  offset: 1, 1
+  index: -1
+mat
+  rotate: false
+  xy: 728, 39
+  size: 139, 22
+  orig: 139, 22
+  offset: 0, 0
+  index: -1
+mom
+  rotate: false
+  xy: 798, 66
+  size: 84, 103
+  orig: 84, 103
+  offset: 0, 0
+  index: -1
+mu cao boi
+  rotate: false
+  xy: 505, 63
+  size: 291, 106
+  orig: 291, 106
+  offset: 0, 0
+  index: -1
+tay phai
+  rotate: false
+  xy: 820, 185
+  size: 54, 51
+  orig: 54, 51
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: false
+  xy: 820, 238
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+than the
+  rotate: false
+  xy: 505, 171
+  size: 313, 339
+  orig: 313, 339
+  offset: 0, 0
+  index: -1

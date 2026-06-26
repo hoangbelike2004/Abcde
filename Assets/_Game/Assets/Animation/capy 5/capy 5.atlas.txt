@@ -1,0 +1,83 @@
+
+capy 5.png
+size: 506,389
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 255, 2
+  size: 152, 20
+  orig: 154, 21
+  offset: 1, 1
+  index: -1
+chan phai
+  rotate: true
+  xy: 431, 49
+  size: 113, 73
+  orig: 113, 73
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: true
+  xy: 431, 164
+  size: 114, 73
+  orig: 114, 73
+  offset: 0, 0
+  index: -1
+gay
+  rotate: true
+  xy: 140, 4
+  size: 52, 113
+  orig: 52, 113
+  offset: 0, 0
+  index: -1
+ma hong
+  rotate: true
+  xy: 368, 49
+  size: 229, 61
+  orig: 231, 62
+  offset: 1, 1
+  index: -1
+mat
+  rotate: false
+  xy: 255, 24
+  size: 144, 23
+  orig: 144, 23
+  offset: 0, 0
+  index: -1
+mom
+  rotate: false
+  xy: 368, 280
+  size: 87, 107
+  orig: 87, 107
+  offset: 0, 0
+  index: -1
+rau
+  rotate: true
+  xy: 457, 283
+  size: 104, 26
+  orig: 105, 28
+  offset: 0, 1
+  index: -1
+tay phai
+  rotate: false
+  xy: 2, 3
+  size: 68, 53
+  orig: 68, 54
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: false
+  xy: 72, 3
+  size: 66, 53
+  orig: 66, 54
+  offset: 0, 0
+  index: -1
+than
+  rotate: true
+  xy: 2, 58
+  size: 329, 364
+  orig: 329, 364
+  offset: 0, 0
+  index: -1

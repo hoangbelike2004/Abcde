@@ -1,0 +1,76 @@
+
+capy 3.png
+size: 684,320
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chan phai
+  rotate: false
+  xy: 574, 249
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: false
+  xy: 574, 178
+  size: 108, 69
+  orig: 108, 69
+  offset: 0, 0
+  index: -1
+kinh
+  rotate: true
+  xy: 463, 62
+  size: 256, 46
+  orig: 257, 46
+  offset: 0, 0
+  index: -1
+ma hong
+  rotate: false
+  xy: 351, 2
+  size: 221, 58
+  orig: 222, 58
+  offset: 0, 0
+  index: -1
+mat
+  rotate: true
+  xy: 511, 178
+  size: 140, 23
+  orig: 140, 23
+  offset: 0, 0
+  index: -1
+mom
+  rotate: false
+  xy: 511, 72
+  size: 85, 104
+  orig: 85, 104
+  offset: 0, 0
+  index: -1
+mu
+  rotate: true
+  xy: 351, 62
+  size: 256, 110
+  orig: 257, 110
+  offset: 1, 0
+  index: -1
+tay phai
+  rotate: false
+  xy: 598, 103
+  size: 81, 73
+  orig: 81, 73
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: false
+  xy: 598, 27
+  size: 78, 74
+  orig: 79, 74
+  offset: 1, 0
+  index: -1
+than
+  rotate: true
+  xy: 2, 5
+  size: 313, 347
+  orig: 313, 348
+  offset: 0, 1
+  index: -1

@@ -1,0 +1,746 @@
+{
+    "skeleton": {
+        "hash": "uQUqLCEw+D9iybaMgH5JyeWCA4M",
+        "spine": "3.8",
+        "x": -377.86,
+        "y": -16.99,
+        "width": 757,
+        "height": 836.03,
+        "images": "./images/",
+        "audio": "E:/capy"
+    },
+    "bones": [
+        {
+            "name": "root"
+        },
+        {
+            "name": "bone",
+            "parent": "root",
+            "x": -5.55,
+            "y": 360.67
+        },
+        {
+            "name": "bone2",
+            "parent": "bone",
+            "length": 56.52,
+            "rotation": 90.9,
+            "x": 0.88,
+            "y": 86.53
+        },
+        {
+            "name": "bone3",
+            "parent": "bone",
+            "length": 33.55,
+            "rotation": 90,
+            "x": 23.84,
+            "y": 148.34
+        },
+        {
+            "name": "bone4",
+            "parent": "bone",
+            "length": 29.14,
+            "rotation": 90,
+            "x": -6.18,
+            "y": 218.98
+        },
+        {
+            "name": "bone5",
+            "parent": "root",
+            "length": 69.76,
+            "rotation": 89.27,
+            "x": 7.7,
+            "y": 716.51
+        },
+        {
+            "name": "bone6",
+            "parent": "root",
+            "length": 128.06,
+            "rotation": 88.81,
+            "x": 4.16,
+            "y": 26.89
+        },
+        {
+            "name": "bone7",
+            "parent": "bone",
+            "length": 65.59,
+            "rotation": -133.36,
+            "x": 174.83,
+            "y": -113.91
+        },
+        {
+            "name": "bone8",
+            "parent": "bone",
+            "length": 58.84,
+            "rotation": -25.8,
+            "x": -156.29,
+            "y": -133.33
+        }
+    ],
+    "slots": [
+        {
+            "name": "Layer 2 copy 10",
+            "bone": "bone",
+            "attachment": "Layer 2 copy 10"
+        },
+        {
+            "name": "tay phải",
+            "bone": "bone7",
+            "attachment": "tay phải"
+        },
+        {
+            "name": "tay trai",
+            "bone": "bone8",
+            "attachment": "tay trai"
+        },
+        {
+            "name": "mat",
+            "bone": "bone4",
+            "attachment": "mat"
+        },
+        {
+            "name": "ma",
+            "bone": "bone3",
+            "attachment": "ma"
+        },
+        {
+            "name": "mui",
+            "bone": "bone2",
+            "attachment": "mui"
+        },
+        {
+            "name": "trung duoi",
+            "bone": "bone6",
+            "attachment": "trung duoi"
+        },
+        {
+            "name": "trung tren",
+            "bone": "bone5",
+            "attachment": "trung tren"
+        }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "mui": {
+                    "mui": {
+                        "x": 19.26,
+                        "y": -3.62,
+                        "rotation": -90.9,
+                        "width": 175,
+                        "height": 217
+                    }
+                },
+                "Layer 2 copy 10": {
+                    "Layer 2 copy 10": {
+                        "x": 4.2,
+                        "y": 5.35,
+                        "width": 625,
+                        "height": 678
+                    }
+                },
+                "tay phải": {
+                    "tay phải": {
+                        "x": 61.85,
+                        "y": -11.24,
+                        "rotation": 133.36,
+                        "width": 103,
+                        "height": 101
+                    }
+                },
+                "ma": {
+                    "ma": {
+                        "x": -9,
+                        "y": 19.14,
+                        "rotation": -90,
+                        "width": 426,
+                        "height": 94
+                    }
+                },
+                "trung tren": {
+                    "trung tren": {
+                        "x": 11.91,
+                        "y": 9.79,
+                        "rotation": -89.27,
+                        "width": 382,
+                        "height": 181
+                    }
+                },
+                "tay trai": {
+                    "tay trai": {
+                        "x": 41.52,
+                        "y": 1.39,
+                        "rotation": 25.8,
+                        "width": 102,
+                        "height": 103
+                    }
+                },
+                "trung duoi": {
+                    "trung duoi": {
+                        "x": 114.52,
+                        "y": 5.89,
+                        "rotation": -88.81,
+                        "width": 757,
+                        "height": 317
+                    }
+                },
+                "mat": {
+                    "mat": {
+                        "x": 0.36,
+                        "y": -10.38,
+                        "rotation": -90,
+                        "width": 279,
+                        "height": 44
+                    }
+                }
+            }
+        }
+    ],
+    "animations": {
+        "action1": {
+            "bones": {
+                "bone2": {
+                    "translate": [
+                        {
+                            "y": -4.14
+                        },
+                        {
+                            "time": 0.2,
+                            "y": 7.46
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.925
+                        },
+                        {
+                            "time": 0.2,
+                            "x": 0.977
+                        }
+                    ]
+                },
+                "bone": {
+                    "translate": [
+                        {
+                            "x": -1.94,
+                            "y": -141.69
+                        },
+                        {
+                            "time": 0.2,
+                            "y": -12.56
+                        },
+                        {
+                            "time": 0.4333,
+                            "x": 3.33,
+                            "y": 32.34
+                        },
+                        {
+                            "time": 0.6,
+                            "x": 2.49,
+                            "y": 46.25
+                        },
+                        {
+                            "time": 0.7667,
+                            "y": -12.56
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "y": 0.545
+                        },
+                        {
+                            "time": 0.2,
+                            "y": 0.961
+                        },
+                        {
+                            "time": 0.4333,
+                            "y": 1.098
+                        },
+                        {
+                            "time": 0.6,
+                            "y": 1.148
+                        },
+                        {
+                            "time": 0.7667,
+                            "y": 1.006
+                        }
+                    ]
+                },
+                "bone4": {
+                    "translate": [
+                        {
+                            "x": -10.45,
+                            "y": 0.15
+                        },
+                        {
+                            "time": 0.2,
+                            "x": 11.81,
+                            "y": -0.18
+                        }
+                    ]
+                },
+                "bone3": {
+                    "translate": [
+                        {
+                            "x": -26.87,
+                            "y": 0.39
+                        },
+                        {
+                            "time": 0.2,
+                            "x": 12.65,
+                            "y": -0.19
+                        }
+                    ]
+                },
+                "bone5": {
+                    "translate": [
+                        {
+                            "x": 6.58,
+                            "y": -325.71
+                        },
+                        {
+                            "time": 0.3333,
+                            "y": 2.64
+                        },
+                        {
+                            "time": 0.6,
+                            "x": -0.09,
+                            "y": 179.11
+                        },
+                        {
+                            "time": 0.9333,
+                            "x": -1.57,
+                            "y": -47.63
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 1.575,
+                            "y": 1.643
+                        },
+                        {
+                            "time": 0.6,
+                            "x": 0.99,
+                            "y": 1.133
+                        },
+                        {
+                            "time": 1.0667,
+                            "x": 0.99,
+                            "y": 1.187
+                        }
+                    ]
+                },
+                "bone6": {
+                    "translate": [
+                        {
+                            "y": -8.31
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.792
+                        },
+                        {
+                            "time": 0.7,
+                            "x": 1.237
+                        },
+                        {
+                            "time": 0.8667,
+                            "x": 0.959,
+                            "y": 1.026
+                        }
+                    ]
+                }
+            }
+        },
+        "action2": {
+            "bones": {
+                "bone2": {
+                    "translate": [
+                        {
+                            "y": 13.33
+                        },
+                        {
+                            "time": 1,
+                            "y": -23.67
+                        },
+                        {
+                            "time": 2,
+                            "y": 13.33
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.935
+                        },
+                        {
+                            "time": 1,
+                            "x": 0.803
+                        },
+                        {
+                            "time": 2,
+                            "x": 0.935
+                        }
+                    ]
+                },
+                "bone5": {
+                    "translate": [
+                        {
+                            "y": 6.48
+                        },
+                        {
+                            "time": 0.6,
+                            "x": -1.29,
+                            "y": -21.9
+                        },
+                        {
+                            "time": 1.0333,
+                            "x": -3.22,
+                            "y": -46.43
+                        },
+                        {
+                            "time": 2,
+                            "y": 6.48
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.959
+                        },
+                        {
+                            "time": 0.6,
+                            "x": 0.903
+                        },
+                        {
+                            "time": 2,
+                            "x": 0.959
+                        }
+                    ]
+                },
+                "bone6": {
+                    "translate": [
+                        {
+                            "y": -8.06
+                        }
+                    ],
+                    "scale": [
+                        {},
+                        {
+                            "time": 1.0333,
+                            "x": 0.919
+                        },
+                        {
+                            "time": 2
+                        }
+                    ]
+                },
+                "bone3": {
+                    "translate": [
+                        {
+                            "x": 15.29,
+                            "y": -0.24
+                        },
+                        {
+                            "time": 1,
+                            "x": 9.63,
+                            "y": -29.24
+                        },
+                        {
+                            "time": 2,
+                            "x": 15.29,
+                            "y": -0.24
+                        }
+                    ]
+                },
+                "bone4": {
+                    "translate": [
+                        {
+                            "x": 0.51,
+                            "y": -0.14
+                        },
+                        {
+                            "time": 1,
+                            "x": 0.51,
+                            "y": -26.22
+                        },
+                        {
+                            "time": 2,
+                            "x": 0.51,
+                            "y": -0.14
+                        }
+                    ]
+                },
+                "bone": {
+                    "translate": [
+                        {
+                            "y": 2.03
+                        },
+                        {
+                            "time": 1,
+                            "y": -13.25
+                        },
+                        {
+                            "time": 2,
+                            "y": 2.03
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "y": 1.03
+                        },
+                        {
+                            "time": 1,
+                            "y": 0.952
+                        },
+                        {
+                            "time": 2,
+                            "y": 1.03
+                        }
+                    ]
+                },
+                "bone8": {
+                    "rotate": [
+                        {
+                            "angle": 9.1
+                        },
+                        {
+                            "time": 1,
+                            "angle": -24.36
+                        },
+                        {
+                            "time": 2,
+                            "angle": 9.1
+                        }
+                    ]
+                },
+                "bone7": {
+                    "rotate": [
+                        {
+                            "angle": -8.72
+                        },
+                        {
+                            "time": 1,
+                            "angle": 27.66
+                        },
+                        {
+                            "time": 2,
+                            "angle": -8.72
+                        }
+                    ]
+                }
+            }
+        },
+        "action3": {
+            "bones": {
+                "bone": {
+                    "translate": [
+                        {
+                            "y": -8.38
+                        },
+                        {
+                            "time": 0.4333,
+                            "y": 20.94
+                        },
+                        {
+                            "time": 1.2333,
+                            "y": -8.38
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "y": 0.95
+                        },
+                        {
+                            "time": 0.4333,
+                            "y": 1.042
+                        },
+                        {
+                            "time": 1.2333,
+                            "y": 0.95
+                        }
+                    ]
+                },
+                "bone8": {
+                    "rotate": [
+                        {
+                            "angle": -3.21
+                        },
+                        {
+                            "time": 0.2667,
+                            "angle": 89.59
+                        },
+                        {
+                            "time": 0.5667,
+                            "angle": 143.36
+                        },
+                        {
+                            "time": 0.6667,
+                            "angle": 157.42
+                        },
+                        {
+                            "time": 0.7667,
+                            "angle": 103.67
+                        },
+                        {
+                            "time": 0.8667,
+                            "angle": 157.42
+                        },
+                        {
+                            "time": 0.9667,
+                            "angle": 103.67
+                        },
+                        {
+                            "time": 1.2333,
+                            "angle": -3.21
+                        }
+                    ]
+                },
+                "bone7": {
+                    "rotate": [
+                        {
+                            "angle": 2.74
+                        },
+                        {
+                            "time": 0.2667,
+                            "angle": -87.03
+                        },
+                        {
+                            "time": 0.5667,
+                            "angle": -153.11
+                        },
+                        {
+                            "time": 0.6667,
+                            "angle": -151.29
+                        },
+                        {
+                            "time": 0.7667,
+                            "angle": -107.16
+                        },
+                        {
+                            "time": 0.8667,
+                            "angle": -151.29
+                        },
+                        {
+                            "time": 0.9667,
+                            "angle": -107.16
+                        },
+                        {
+                            "time": 1.2333,
+                            "angle": 2.74
+                        }
+                    ],
+                    "translate": [
+                        {
+                            "x": -8.38
+                        },
+                        {
+                            "time": 0.5667,
+                            "x": -22.34,
+                            "y": -46.89
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": -8.38
+                        }
+                    ]
+                },
+                "bone5": {
+                    "translate": [
+                        {
+                            "y": -39.49
+                        },
+                        {
+                            "time": 0.4333,
+                            "x": 4.27,
+                            "y": 31.09
+                        },
+                        {
+                            "time": 1.2333,
+                            "y": -39.49
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.834
+                        },
+                        {
+                            "time": 0.4333,
+                            "x": 0.898
+                        },
+                        {
+                            "time": 1.2333,
+                            "x": 0.834
+                        }
+                    ]
+                },
+                "bone2": {
+                    "translate": [
+                        {
+                            "y": 2.18
+                        },
+                        {
+                            "time": 0.4333,
+                            "x": -2.07,
+                            "y": 20.88
+                        },
+                        {
+                            "time": 1.2333,
+                            "y": 2.18
+                        }
+                    ],
+                    "scale": [
+                        {
+                            "x": 0.855
+                        }
+                    ]
+                },
+                "bone3": {
+                    "translate": [
+                        {
+                            "y": -9.81
+                        },
+                        {
+                            "time": 0.4333,
+                            "x": 1.04,
+                            "y": 13.92
+                        },
+                        {
+                            "time": 1.2333,
+                            "y": -9.81
+                        }
+                    ]
+                },
+                "bone4": {
+                    "translate": [
+                        {
+                            "y": -3.27
+                        },
+                        {
+                            "time": 0.4333,
+                            "y": 0.71
+                        },
+                        {
+                            "time": 1.2333,
+                            "y": -3.27
+                        }
+                    ]
+                },
+                "bone6": {
+                    "scale": [
+                        {
+                            "x": 0.894
+                        },
+                        {
+                            "time": 0.5333,
+                            "x": 1.047
+                        },
+                        {
+                            "time": 1.1333,
+                            "x": 0.894
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

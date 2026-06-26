@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2341304067234533088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5079456539231216794}
+  m_Layer: 0
+  m_Name: Borders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5079456539231216794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2341304067234533088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 401974146604727088}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3636576064895201785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401974146604727088}
+  - component: {fileID: 5048199071119336590}
+  m_Layer: 0
+  m_Name: Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401974146604727088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3636576064895201785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.38697, y: 0.77394, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5079456539231216794}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5048199071119336590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3636576064895201785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a679dec597d4f629741a2190290c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoolManager
+  poolAmounts:
+  - _name: Border
+    amount: 0
+    prefab: {fileID: 49554152621815601, guid: 00782ab997b2f4d7b9fd3b2a6182d1f4, type: 3}
+    parent: {fileID: 5079456539231216794}
+  - _name: Capy_Dark_Green_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 3165c86e638c44ef89b3ec6bab5cca9b, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Light_Blue_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 8e758db92805e4dc4b0cfa0b73ea18f3, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Brown_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 4c0a57732727345448a3a28d04ee37b8, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Pink_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 3f63e62020b16496aae4e48210df13f3, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Purple_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: f6d623e2c02b84d60bce6796c3da5a49, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Yellow_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 0d2de04d8a0c34a21bd9b651c0aab365, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Audio_Sources
+    amount: 0
+    prefab: {fileID: 124344783590424571, guid: 4fd540a2208798c4085d542d128e679e, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Cyan_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 3f6379bb7ccaa46e0b356f146be05f00, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Orange_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 1dee453623536439a8ebaab23884d896, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Gray_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 5d7940b3e03be445593a81d940870a3b, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Dark_Blue_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 49dc0a4137e624747aa20563c5f213fb, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Red_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: 20ff803b668574fc1b13fbc0e2f8b640, type: 3}
+    parent: {fileID: 401974146604727088}
+  - _name: Capy_Light_Green_Unit
+    amount: 0
+    prefab: {fileID: 7750385316675649423, guid: bdbf137854bed4ad3adeb52322c27ef6, type: 3}
+    parent: {fileID: 401974146604727088}

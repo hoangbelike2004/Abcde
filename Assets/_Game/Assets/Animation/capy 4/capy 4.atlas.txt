@@ -1,0 +1,90 @@
+
+capy 4.png
+size: 589,334
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chan phai
+  rotate: true
+  xy: 425, 3
+  size: 113, 73
+  orig: 113, 73
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: true
+  xy: 425, 118
+  size: 114, 73
+  orig: 114, 73
+  offset: 0, 0
+  index: -1
+ma hong
+  rotate: true
+  xy: 362, 2
+  size: 230, 61
+  orig: 230, 62
+  offset: 0, 1
+  index: -1
+mat
+  rotate: false
+  xy: 362, 309
+  size: 143, 23
+  orig: 143, 23
+  offset: 0, 0
+  index: -1
+mom
+  rotate: false
+  xy: 500, 96
+  size: 87, 107
+  orig: 87, 107
+  offset: 0, 0
+  index: -1
+mu
+  rotate: false
+  xy: 362, 234
+  size: 140, 73
+  orig: 140, 73
+  offset: 0, 0
+  index: -1
+tay phai
+  rotate: false
+  xy: 507, 271
+  size: 76, 61
+  orig: 76, 61
+  offset: 0, 0
+  index: -1
+tay trai
+  rotate: false
+  xy: 504, 205
+  size: 75, 64
+  orig: 75, 64
+  offset: 0, 0
+  index: -1
+than
+  rotate: true
+  xy: 2, 3
+  size: 329, 358
+  orig: 329, 358
+  offset: 0, 0
+  index: -1
+z1
+  rotate: true
+  xy: 549, 52
+  size: 42, 38
+  orig: 43, 38
+  offset: 0, 0
+  index: -1
+z2
+  rotate: false
+  xy: 500, 54
+  size: 47, 40
+  orig: 48, 41
+  offset: 0, 0
+  index: -1
+z3
+  rotate: false
+  xy: 500, 10
+  size: 44, 42
+  orig: 46, 42
+  offset: 1, 0
+  index: -1
